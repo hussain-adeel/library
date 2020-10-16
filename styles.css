@@ -1,0 +1,116 @@
+body 
+{
+    background-color: #FAFAFA;
+}
+header h1
+{
+    padding-top: 10px;
+    font-size: 100px;
+    font-family: 'Staatliches', cursive;
+}
+.center
+{
+    width: 99%;
+    margin: auto;
+    text-align: center;
+}
+.library
+{
+    overflow: auto;
+}
+#lib
+{
+    padding-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.title
+{
+    color: white;
+}
+div input
+{
+    width: 50%;
+}
+.book h2
+{
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.book
+{
+    background-image: linear-gradient(top, black, black 20%, transparent 20%, transparent 100%);
+    background-image: -webkit-linear-gradient(top, black, black 20%, transparent 20%, transparent 100%);
+
+    display: flex;
+    flex-direction: column;
+
+ 
+    border-radius: 20px;
+    margin: 15px auto;
+    text-align: center;
+    border: 1px solid black;
+    height: 300px;
+    width: 250px;
+}
+.readbut
+{
+    width: 100px;
+    height: 30px;
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(28,184,65);
+}
+.unreadbut
+{
+    width: 100px;
+    height: 30px;
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(202,60,60);
+}
+.add
+{
+    font-weight: bold;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(30, 233, 223);
+}
+.promo {
+    text-align: center;
+    width: 75px;
+    margin: none;
+    color: black;
+    display: block;
+    font-family: 'Russo One', sans-serif;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+}
+.promo::before {
+    position: absolute;
+    width: 100%;
+    content: "";
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: lightblue;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+.promo:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+
