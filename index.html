@@ -1,23 +1,25 @@
+
 <head>
     <title>Library | Adeel Hussain</title>
     <link href="styles.css"  rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> 
-
 </head>
 <main>
     <header class="center">
         <h1 class="center">LIBRARY</h1>
-        <input type="button" class="add" value="+">
+        <form id="addbook" onsubmit="return submitForm()">
+            <input id="FORMtitle" type="text" required placeholder="Title">
+            <input id="FORMauthor" type="text" required placeholder="Author">
+            <input id="FORMpages" type="number" required placeholder="Num Pages" min=0>
+            <input id="FORMread" type="button" onclick="change(this)" value="read">
+            <br>
+            <input type="submit" class="add" id="addbtn" value="+">
+        </form>
         <h3><a href="https://google.com/" target="_new" class="center promo">github</a></h3>
     </header>
     <body>
         <div id="lib">
-            <div id="book" class="book">
-                <h2 class="title">THE PRESIDENT IS MISSING</h2>
-                <h2>TITLEOFOFOFOFOTITLE</h2>
-                <h2><input type="number"></h2>
-                <h2><input type="button" value="READ" class="readbut"></h2>
-            </div>
         </div>
     </body>
+    <script src="script.js"></script>
 </main>
